@@ -15,6 +15,16 @@
 		0A837A0A1FA6CEBE003B6E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A091FA6CEBE003B6E08 /* main.m */; };
 		0A837A141FA6CEBE003B6E08 /* WEXFuturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A131FA6CEBE003B6E08 /* WEXFuturesTests.m */; };
 		0A837A1F1FA6CEBE003B6E08 /* WEXFuturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A1E1FA6CEBE003B6E08 /* WEXFuturesUITests.m */; };
+		0A837A351FA707F1003B6E08 /* NSDate+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A2E1FA707F1003B6E08 /* NSDate+Ext.m */; };
+		0A837A361FA707F1003B6E08 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A301FA707F1003B6E08 /* NSString+Ext.m */; };
+		0A837A371FA707F1003B6E08 /* NSString+Verify.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A321FA707F1003B6E08 /* NSString+Verify.m */; };
+		0A837A381FA707F1003B6E08 /* UIFont+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A341FA707F1003B6E08 /* UIFont+Ext.m */; };
+		0A837A3D1FA708D7003B6E08 /* WEXBaseNetworkApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A3C1FA708D7003B6E08 /* WEXBaseNetworkApi.m */; };
+		0A837A471FA71179003B6E08 /* DebugModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A461FA71179003B6E08 /* DebugModule.m */; };
+		0A837A4F1FA7131B003B6E08 /* DBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A4A1FA7131B003B6E08 /* DBTools.m */; };
+		0A837A501FA7131B003B6E08 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A4C1FA7131B003B6E08 /* FileUtil.m */; };
+		0A837A511FA7131B003B6E08 /* SizeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A4E1FA7131B003B6E08 /* SizeUtil.m */; };
+		0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */; };
 		3F0E39D82996532E70459D54 /* Pods_WEXFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +62,31 @@
 		0A837A1A1FA6CEBE003B6E08 /* WEXFuturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WEXFuturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A837A1E1FA6CEBE003B6E08 /* WEXFuturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXFuturesUITests.m; sourceTree = "<group>"; };
 		0A837A201FA6CEBE003B6E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A837A2D1FA707F1003B6E08 /* NSDate+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ext.h"; sourceTree = "<group>"; };
+		0A837A2E1FA707F1003B6E08 /* NSDate+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Ext.m"; sourceTree = "<group>"; };
+		0A837A2F1FA707F1003B6E08 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		0A837A301FA707F1003B6E08 /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		0A837A311FA707F1003B6E08 /* NSString+Verify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verify.h"; sourceTree = "<group>"; };
+		0A837A321FA707F1003B6E08 /* NSString+Verify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verify.m"; sourceTree = "<group>"; };
+		0A837A331FA707F1003B6E08 /* UIFont+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Ext.h"; sourceTree = "<group>"; };
+		0A837A341FA707F1003B6E08 /* UIFont+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Ext.m"; sourceTree = "<group>"; };
+		0A837A3A1FA7082C003B6E08 /* WEXFuturesHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXFuturesHeader.pch; sourceTree = "<group>"; };
+		0A837A3B1FA708D7003B6E08 /* WEXBaseNetworkApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXBaseNetworkApi.h; sourceTree = "<group>"; };
+		0A837A3C1FA708D7003B6E08 /* WEXBaseNetworkApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXBaseNetworkApi.m; sourceTree = "<group>"; };
+		0A837A3F1FA70B8F003B6E08 /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
+		0A837A401FA70B8F003B6E08 /* DimensDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensDefine.h; sourceTree = "<group>"; };
+		0A837A411FA70B8F003B6E08 /* NotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
+		0A837A421FA70B8F003B6E08 /* SystemMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemMacros.h; sourceTree = "<group>"; };
+		0A837A451FA71179003B6E08 /* DebugModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugModule.h; sourceTree = "<group>"; };
+		0A837A461FA71179003B6E08 /* DebugModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebugModule.m; sourceTree = "<group>"; };
+		0A837A491FA7131B003B6E08 /* DBTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTools.h; sourceTree = "<group>"; };
+		0A837A4A1FA7131B003B6E08 /* DBTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBTools.m; sourceTree = "<group>"; };
+		0A837A4B1FA7131B003B6E08 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		0A837A4C1FA7131B003B6E08 /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		0A837A4D1FA7131B003B6E08 /* SizeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeUtil.h; sourceTree = "<group>"; };
+		0A837A4E1FA7131B003B6E08 /* SizeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeUtil.m; sourceTree = "<group>"; };
+		0A837A521FA713CA003B6E08 /* CrashLoginMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashLoginMemory.h; sourceTree = "<group>"; };
+		0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashLoginMemory.m; sourceTree = "<group>"; };
 		2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.release.xcconfig"; sourceTree = "<group>"; };
 		58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEXFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +143,10 @@
 		0A8379F91FA6CEBE003B6E08 /* WEXFutures */ = {
 			isa = PBXGroup;
 			children = (
+				0A837A431FA7115B003B6E08 /* Tools */,
+				0A837A3E1FA70B8F003B6E08 /* Define */,
+				0A837A391FA707FD003B6E08 /* Network */,
+				0A837A2C1FA707F1003B6E08 /* Category */,
 				0A8379FA1FA6CEBE003B6E08 /* AppDelegate.h */,
 				0A8379FB1FA6CEBE003B6E08 /* AppDelegate.m */,
 				0A8379FD1FA6CEBE003B6E08 /* ViewController.h */,
@@ -117,6 +156,7 @@
 				0A837A051FA6CEBE003B6E08 /* LaunchScreen.storyboard */,
 				0A837A081FA6CEBE003B6E08 /* Info.plist */,
 				0A837A091FA6CEBE003B6E08 /* main.m */,
+				0A837A3A1FA7082C003B6E08 /* WEXFuturesHeader.pch */,
 			);
 			path = WEXFutures;
 			sourceTree = "<group>";
@@ -137,6 +177,74 @@
 				0A837A201FA6CEBE003B6E08 /* Info.plist */,
 			);
 			path = WEXFuturesUITests;
+			sourceTree = "<group>";
+		};
+		0A837A2C1FA707F1003B6E08 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A481FA7131B003B6E08 /* ToolsUtil */,
+				0A837A2D1FA707F1003B6E08 /* NSDate+Ext.h */,
+				0A837A2E1FA707F1003B6E08 /* NSDate+Ext.m */,
+				0A837A2F1FA707F1003B6E08 /* NSString+Ext.h */,
+				0A837A301FA707F1003B6E08 /* NSString+Ext.m */,
+				0A837A311FA707F1003B6E08 /* NSString+Verify.h */,
+				0A837A321FA707F1003B6E08 /* NSString+Verify.m */,
+				0A837A331FA707F1003B6E08 /* UIFont+Ext.h */,
+				0A837A341FA707F1003B6E08 /* UIFont+Ext.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0A837A391FA707FD003B6E08 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A3B1FA708D7003B6E08 /* WEXBaseNetworkApi.h */,
+				0A837A3C1FA708D7003B6E08 /* WEXBaseNetworkApi.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0A837A3E1FA70B8F003B6E08 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A3F1FA70B8F003B6E08 /* ColorDefine.h */,
+				0A837A401FA70B8F003B6E08 /* DimensDefine.h */,
+				0A837A411FA70B8F003B6E08 /* NotificationDefine.h */,
+				0A837A421FA70B8F003B6E08 /* SystemMacros.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		0A837A431FA7115B003B6E08 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A441FA7115B003B6E08 /* Debug */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0A837A441FA7115B003B6E08 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A451FA71179003B6E08 /* DebugModule.h */,
+				0A837A461FA71179003B6E08 /* DebugModule.m */,
+				0A837A521FA713CA003B6E08 /* CrashLoginMemory.h */,
+				0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		0A837A481FA7131B003B6E08 /* ToolsUtil */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A491FA7131B003B6E08 /* DBTools.h */,
+				0A837A4A1FA7131B003B6E08 /* DBTools.m */,
+				0A837A4B1FA7131B003B6E08 /* FileUtil.h */,
+				0A837A4C1FA7131B003B6E08 /* FileUtil.m */,
+				0A837A4D1FA7131B003B6E08 /* SizeUtil.h */,
+				0A837A4E1FA7131B003B6E08 /* SizeUtil.m */,
+			);
+			path = ToolsUtil;
 			sourceTree = "<group>";
 		};
 		3CC8C5F9993C541072C02109 /* Pods */ = {
@@ -340,8 +448,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A837A471FA71179003B6E08 /* DebugModule.m in Sources */,
+				0A837A4F1FA7131B003B6E08 /* DBTools.m in Sources */,
 				0A8379FF1FA6CEBE003B6E08 /* ViewController.m in Sources */,
+				0A837A501FA7131B003B6E08 /* FileUtil.m in Sources */,
+				0A837A3D1FA708D7003B6E08 /* WEXBaseNetworkApi.m in Sources */,
 				0A837A0A1FA6CEBE003B6E08 /* main.m in Sources */,
+				0A837A511FA7131B003B6E08 /* SizeUtil.m in Sources */,
+				0A837A371FA707F1003B6E08 /* NSString+Verify.m in Sources */,
+				0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */,
+				0A837A361FA707F1003B6E08 /* NSString+Ext.m in Sources */,
+				0A837A381FA707F1003B6E08 /* UIFont+Ext.m in Sources */,
+				0A837A351FA707F1003B6E08 /* NSDate+Ext.m in Sources */,
 				0A8379FC1FA6CEBE003B6E08 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -508,11 +626,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699KFG68T7;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WEXFutures/WEXFuturesHeader.pch;
 				INFOPLIST_FILE = WEXFutures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.WEXFutures";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -523,11 +646,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 699KFG68T7;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WEXFutures/WEXFuturesHeader.pch;
 				INFOPLIST_FILE = WEXFutures/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.WEXFutures";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
