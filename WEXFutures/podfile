@@ -1,0 +1,22 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'WEXFutures' do
+
+pod 'AFNetworking'
+pod 'MJExtension'
+pod 'SDWebImage'
+
+
+
+pod 'JSONModel'
+
+pod 'OpenUDID'
+pod 'SSKeychain','~> 1.2.3'
+
+pod 'Masonry'
+pod 'MJRefresh'
+pod 'CYLTabBarController', '~> 1.13.1'
+
+
+end

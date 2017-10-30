@@ -15,6 +15,7 @@
 		0A837A0A1FA6CEBE003B6E08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A091FA6CEBE003B6E08 /* main.m */; };
 		0A837A141FA6CEBE003B6E08 /* WEXFuturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A131FA6CEBE003B6E08 /* WEXFuturesTests.m */; };
 		0A837A1F1FA6CEBE003B6E08 /* WEXFuturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A1E1FA6CEBE003B6E08 /* WEXFuturesUITests.m */; };
+		3F0E39D82996532E70459D54 /* Pods_WEXFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		0A837A1A1FA6CEBE003B6E08 /* WEXFuturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WEXFuturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A837A1E1FA6CEBE003B6E08 /* WEXFuturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXFuturesUITests.m; sourceTree = "<group>"; };
 		0A837A201FA6CEBE003B6E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.release.xcconfig"; sourceTree = "<group>"; };
+		58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEXFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0E39D82996532E70459D54 /* Pods_WEXFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				0A837A121FA6CEBE003B6E08 /* WEXFuturesTests */,
 				0A837A1D1FA6CEBE003B6E08 /* WEXFuturesUITests */,
 				0A8379F81FA6CEBE003B6E08 /* Products */,
+				3CC8C5F9993C541072C02109 /* Pods */,
+				7F33B253C093FAA27E672042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = WEXFuturesUITests;
 			sourceTree = "<group>";
 		};
+		3CC8C5F9993C541072C02109 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */,
+				2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F33B253C093FAA27E672042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A837A231FA6CEBE003B6E08 /* Build configuration list for PBXNativeTarget "WEXFutures" */;
 			buildPhases = (
+				AF7E1A5C34CF3F337F5B5F00 /* [CP] Check Pods Manifest.lock */,
 				0A8379F31FA6CEBE003B6E08 /* Sources */,
 				0A8379F41FA6CEBE003B6E08 /* Frameworks */,
 				0A8379F51FA6CEBE003B6E08 /* Resources */,
+				7D013E74492C5D4901FF4C64 /* [CP] Embed Pods Frameworks */,
+				9BF1113B28747454574EDC56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D013E74492C5D4901FF4C64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BF1113B28747454574EDC56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF7E1A5C34CF3F337F5B5F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A8379F31FA6CEBE003B6E08 /* Sources */ = {
@@ -428,6 +503,7 @@
 		};
 		0A837A241FA6CEBE003B6E08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +518,7 @@
 		};
 		0A837A251FA6CEBE003B6E08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
