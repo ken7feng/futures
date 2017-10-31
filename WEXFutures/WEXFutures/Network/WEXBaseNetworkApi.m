@@ -89,4 +89,154 @@
 #endif
 }
 
+- (void)requestPostWithUrl:(NSString *)url paramData:(id)params success:(void (^)(id responseObject))success fail:(void (^)(NSError * error))faild
+{
+    NSDate * date = [NSDate getCurrentDate];
+    NSString* timeStamp = [NSString stringWithFormat:@"%d", (int)([date timeIntervalSince1970]/1)];
+    if (token.length <= 0&& [NSString emptyOrNull:token]) {
+        token = @"";
+    }
+    
+    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", @"text/json" ,@"text/javascript", @"image/png", @"image/jpeg", nil];
+    [manager.requestSerializer setValue:timeStamp forHTTPHeaderField:@"X-HFH-T"]; //访问时间
+    [manager.requestSerializer setValue:token forHTTPHeaderField:@"apiToken"];
+    [manager.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"device"];
+    [manager.requestSerializer setValue:AppVersion forHTTPHeaderField:@"version"];
+    [manager.requestSerializer setTimeoutInterval:_networkTimeout];
+    
+    //    NSString* doUrl = [NSString stringWithFormat:@"%@%@%@",[[NetworkConfig defaultManager] getCurrentServer],AppVersion,url];
+    NSString* doUrl = [NSString stringWithFormat:@"%@%@",[[NetworkConfig defaultManager] getCurrentServer],url];
+    NSTimeInterval requestTime = [[NSDate date] timeIntervalSince1970];
+    NSLog(@"--------------===============%@===============--------------",manager.requestSerializer.HTTPRequestHeaders);
+    
+    [manager POST:doUrl parameters:params progress:^(NSProgress * _Nonnull uploadProgress)
+     {
+#ifdef DEBUG
+         DebugLog(@"progress:%@",uploadProgress);
+#endif
+     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+         NSTimeInterval responseTime = [[NSDate date] timeIntervalSince1970];
+         [self addEventWithSendTime:requestTime responseTime:responseTime];
+         if (responseObject != nil)
+         {
+             NSData *tempDisplay = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+             NSString *tempString =[[NSString alloc] initWithData:tempDisplay encoding:NSUTF8StringEncoding];
+#ifdef DEBUG
+             DebugLog(@"----------------------------------------------------------------\n  >>>>> 接口URL: %@\r\n  >>>>> 接口参数:\r\n\%@\r\n  >>>>> 接口返回值: %@\r\n----------------------------------------------------------------", doUrl, params,tempString);
+#endif
+             if (success)
+             {
+                 NSString * status = nil;
+                 NSString * errmsg = nil;
+                 @try
+                 {
+                     status = [NSString stringWithFormat:@"%@",[responseObject objectForKey:@"status"]];
+                     errmsg = [responseObject objectForKey:@"errmsg"];
+                 } @catch (NSException *exception) {
+                     faild([[NSError alloc]initWithDomain:@"error" code:ResponseFail userInfo:nil]);
+                     return;
+#ifdef DEBUG
+                     DebugLog(@"*****************************************************************\n  >>>>> 接口URL%@------- 【status】异常！！！！！！:",doUrl);
+#endif
+                 }
+                 if ([status isEqualToString:@"200"])
+                 {
+                     id responseData = nil;
+                     @try {
+                         responseData = [responseObject objectForKey:@"data"];
+                     } @catch (NSException *exception) {
+#ifdef DEBUG
+                         DebugLog(@"*****************************************************************\n  >>>>> 接口URL%@------- 【data】异常,data节点未找到！！！！！！:",doUrl);
+#endif
+                         faild([NSError errorWithDomain:@"error" code:ResponseDoNothing userInfo:nil]);
+                     }
+                     success(responseData);
+                 }
+                 //token失效
+                 else if ([status isEqualToString:@""])
+                 {
+                     
+                 }
+                 else
+                 {
+                     
+                     ErrorModel * errorDataModel = [[ErrorModel alloc]init];
+                     errorDataModel.errmsg = errmsg;
+                     errorDataModel.code = status;
+                     NSError *error = [[NSError alloc]initWithDomain:@"error" code:ResponseNetworkError userInfo:@{kError : errorDataModel}];
+                     faild(error);
+                     
+                 }
+             }
+         }
+     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+#ifdef DEBUG
+         DebugLog(@"*****************************************************************\n  >>>>> 接口URL%@  \r\n--------【networkError】 Error:%@",doUrl,error);
+#endif
+         if (faild) {
+             faild(error);
+             
+         }
+     }];
+}
+
+-(void)addEventWithSendTime:(NSTimeInterval)sendTime responseTime:(NSTimeInterval)responseTime
+{
+    NSTimeInterval totalTime = (responseTime-sendTime)/100;
+    NSString* netType = [self currentNetworkType];
+    NSString* timeLabel = nil;
+    
+    if (totalTime < 05) {
+        timeLabel = @"0005";
+    }
+    else if(totalTime < 10)
+    {
+        timeLabel = @"0510";
+    }
+    else if(totalTime < 15)
+    {
+        timeLabel = @"1015";
+    }else if(totalTime < 20)
+    {
+        timeLabel = @"1520";
+    }else if(totalTime < 25)
+    {
+        timeLabel = @"2025";
+    }
+    else if(totalTime < 30)
+    {
+        timeLabel = @"2530";
+    }
+    else if(totalTime < 35)
+    {
+        timeLabel = @"3035";
+    }
+    else if(totalTime < 40)
+    {
+        timeLabel = @"3540";
+    }
+    else if(totalTime < 50)
+    {
+        timeLabel = @"4050";
+    }
+    else if(totalTime < 60)
+    {
+        timeLabel = @"5060";
+    }
+    else if(totalTime < 70)
+    {
+        timeLabel = @"6070";
+    }
+    else if(totalTime < 80)
+    {
+        timeLabel = @"7080";
+    }
+    else
+    {
+        timeLabel = @"8099";
+    }
+    //    NSString* label = [NSString stringWithFormat:@"%@%@", netType, timeLabel];
+}
+
 @end

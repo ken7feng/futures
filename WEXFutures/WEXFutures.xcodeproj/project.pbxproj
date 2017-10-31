@@ -25,6 +25,8 @@
 		0A837A501FA7131B003B6E08 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A4C1FA7131B003B6E08 /* FileUtil.m */; };
 		0A837A511FA7131B003B6E08 /* SizeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A4E1FA7131B003B6E08 /* SizeUtil.m */; };
 		0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */; };
+		0A837A571FA71AA5003B6E08 /* WEXNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A561FA71AA5003B6E08 /* WEXNetworkConfig.m */; };
+		0A837A5A1FA71B24003B6E08 /* WEXUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A591FA71B24003B6E08 /* WEXUrlConfig.m */; };
 		3F0E39D82996532E70459D54 /* Pods_WEXFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,10 @@
 		0A837A4E1FA7131B003B6E08 /* SizeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeUtil.m; sourceTree = "<group>"; };
 		0A837A521FA713CA003B6E08 /* CrashLoginMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashLoginMemory.h; sourceTree = "<group>"; };
 		0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashLoginMemory.m; sourceTree = "<group>"; };
+		0A837A551FA71AA5003B6E08 /* WEXNetworkConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXNetworkConfig.h; sourceTree = "<group>"; };
+		0A837A561FA71AA5003B6E08 /* WEXNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXNetworkConfig.m; sourceTree = "<group>"; };
+		0A837A581FA71B24003B6E08 /* WEXUrlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXUrlConfig.h; sourceTree = "<group>"; };
+		0A837A591FA71B24003B6E08 /* WEXUrlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXUrlConfig.m; sourceTree = "<group>"; };
 		2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.release.xcconfig"; sourceTree = "<group>"; };
 		58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEXFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +206,10 @@
 			children = (
 				0A837A3B1FA708D7003B6E08 /* WEXBaseNetworkApi.h */,
 				0A837A3C1FA708D7003B6E08 /* WEXBaseNetworkApi.m */,
+				0A837A551FA71AA5003B6E08 /* WEXNetworkConfig.h */,
+				0A837A561FA71AA5003B6E08 /* WEXNetworkConfig.m */,
+				0A837A581FA71B24003B6E08 /* WEXUrlConfig.h */,
+				0A837A591FA71B24003B6E08 /* WEXUrlConfig.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -451,11 +461,13 @@
 				0A837A471FA71179003B6E08 /* DebugModule.m in Sources */,
 				0A837A4F1FA7131B003B6E08 /* DBTools.m in Sources */,
 				0A8379FF1FA6CEBE003B6E08 /* ViewController.m in Sources */,
+				0A837A571FA71AA5003B6E08 /* WEXNetworkConfig.m in Sources */,
 				0A837A501FA7131B003B6E08 /* FileUtil.m in Sources */,
 				0A837A3D1FA708D7003B6E08 /* WEXBaseNetworkApi.m in Sources */,
 				0A837A0A1FA6CEBE003B6E08 /* main.m in Sources */,
 				0A837A511FA7131B003B6E08 /* SizeUtil.m in Sources */,
 				0A837A371FA707F1003B6E08 /* NSString+Verify.m in Sources */,
+				0A837A5A1FA71B24003B6E08 /* WEXUrlConfig.m in Sources */,
 				0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */,
 				0A837A361FA707F1003B6E08 /* NSString+Ext.m in Sources */,
 				0A837A381FA707F1003B6E08 /* UIFont+Ext.m in Sources */,
