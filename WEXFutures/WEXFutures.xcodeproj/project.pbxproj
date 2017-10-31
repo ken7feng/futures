@@ -27,6 +27,14 @@
 		0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A531FA713CA003B6E08 /* CrashLoginMemory.m */; };
 		0A837A571FA71AA5003B6E08 /* WEXNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A561FA71AA5003B6E08 /* WEXNetworkConfig.m */; };
 		0A837A5A1FA71B24003B6E08 /* WEXUrlConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A591FA71B24003B6E08 /* WEXUrlConfig.m */; };
+		0A837A611FA84EE9003B6E08 /* WEXBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A601FA84EE9003B6E08 /* WEXBaseTableViewController.m */; };
+		0A837A641FA84F3A003B6E08 /* WEXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A631FA84F3A003B6E08 /* WEXBaseViewController.m */; };
+		0A837A6A1FA85079003B6E08 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A691FA85079003B6E08 /* UIViewController+Ext.m */; };
+		0A837A6E1FA8527D003B6E08 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A6D1FA8527D003B6E08 /* ToastView.m */; };
+		0A837A751FA856B0003B6E08 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A711FA856B0003B6E08 /* ProgressHUD.m */; };
+		0A837A761FA856B0003B6E08 /* LoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A731FA856B0003B6E08 /* LoadingHUD.m */; };
+		0A837A771FA856B0003B6E08 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A741FA856B0003B6E08 /* ProgressView.m */; };
+		0A837A7A1FA858F2003B6E08 /* WEXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A837A791FA858F2003B6E08 /* WEXAlert.m */; };
 		3F0E39D82996532E70459D54 /* Pods_WEXFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +101,22 @@
 		0A837A561FA71AA5003B6E08 /* WEXNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXNetworkConfig.m; sourceTree = "<group>"; };
 		0A837A581FA71B24003B6E08 /* WEXUrlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXUrlConfig.h; sourceTree = "<group>"; };
 		0A837A591FA71B24003B6E08 /* WEXUrlConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXUrlConfig.m; sourceTree = "<group>"; };
+		0A837A5F1FA84EE9003B6E08 /* WEXBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXBaseTableViewController.h; sourceTree = "<group>"; };
+		0A837A601FA84EE9003B6E08 /* WEXBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXBaseTableViewController.m; sourceTree = "<group>"; };
+		0A837A621FA84F3A003B6E08 /* WEXBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXBaseViewController.h; sourceTree = "<group>"; };
+		0A837A631FA84F3A003B6E08 /* WEXBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXBaseViewController.m; sourceTree = "<group>"; };
+		0A837A681FA85079003B6E08 /* UIViewController+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		0A837A691FA85079003B6E08 /* UIViewController+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
+		0A837A6C1FA8527D003B6E08 /* ToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		0A837A6D1FA8527D003B6E08 /* ToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
+		0A837A6F1FA856B0003B6E08 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		0A837A701FA856B0003B6E08 /* LoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingHUD.h; sourceTree = "<group>"; };
+		0A837A711FA856B0003B6E08 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		0A837A721FA856B0003B6E08 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		0A837A731FA856B0003B6E08 /* LoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingHUD.m; sourceTree = "<group>"; };
+		0A837A741FA856B0003B6E08 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		0A837A781FA858F2003B6E08 /* WEXAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEXAlert.h; sourceTree = "<group>"; };
+		0A837A791FA858F2003B6E08 /* WEXAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEXAlert.m; sourceTree = "<group>"; };
 		2DBB45339D8795918D10FAC1 /* Pods-WEXFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.release.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.release.xcconfig"; sourceTree = "<group>"; };
 		58597E80F00B1E059E10CF4A /* Pods_WEXFutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WEXFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F396358ADDF009795A3EFD16 /* Pods-WEXFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WEXFutures.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WEXFutures/Pods-WEXFutures.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +173,7 @@
 		0A8379F91FA6CEBE003B6E08 /* WEXFutures */ = {
 			isa = PBXGroup;
 			children = (
+				0A837A5B1FA84EBD003B6E08 /* BaseVC */,
 				0A837A431FA7115B003B6E08 /* Tools */,
 				0A837A3E1FA70B8F003B6E08 /* Define */,
 				0A837A391FA707FD003B6E08 /* Network */,
@@ -197,6 +222,8 @@
 				0A837A321FA707F1003B6E08 /* NSString+Verify.m */,
 				0A837A331FA707F1003B6E08 /* UIFont+Ext.h */,
 				0A837A341FA707F1003B6E08 /* UIFont+Ext.m */,
+				0A837A681FA85079003B6E08 /* UIViewController+Ext.h */,
+				0A837A691FA85079003B6E08 /* UIViewController+Ext.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -229,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				0A837A441FA7115B003B6E08 /* Debug */,
+				0A837A6B1FA8526C003B6E08 /* Prompt */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -255,6 +283,34 @@
 				0A837A4E1FA7131B003B6E08 /* SizeUtil.m */,
 			);
 			path = ToolsUtil;
+			sourceTree = "<group>";
+		};
+		0A837A5B1FA84EBD003B6E08 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A5F1FA84EE9003B6E08 /* WEXBaseTableViewController.h */,
+				0A837A601FA84EE9003B6E08 /* WEXBaseTableViewController.m */,
+				0A837A621FA84F3A003B6E08 /* WEXBaseViewController.h */,
+				0A837A631FA84F3A003B6E08 /* WEXBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		0A837A6B1FA8526C003B6E08 /* Prompt */ = {
+			isa = PBXGroup;
+			children = (
+				0A837A701FA856B0003B6E08 /* LoadingHUD.h */,
+				0A837A731FA856B0003B6E08 /* LoadingHUD.m */,
+				0A837A6F1FA856B0003B6E08 /* ProgressHUD.h */,
+				0A837A711FA856B0003B6E08 /* ProgressHUD.m */,
+				0A837A721FA856B0003B6E08 /* ProgressView.h */,
+				0A837A741FA856B0003B6E08 /* ProgressView.m */,
+				0A837A6C1FA8527D003B6E08 /* ToastView.h */,
+				0A837A6D1FA8527D003B6E08 /* ToastView.m */,
+				0A837A781FA858F2003B6E08 /* WEXAlert.h */,
+				0A837A791FA858F2003B6E08 /* WEXAlert.m */,
+			);
+			path = Prompt;
 			sourceTree = "<group>";
 		};
 		3CC8C5F9993C541072C02109 /* Pods */ = {
@@ -458,11 +514,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A837A761FA856B0003B6E08 /* LoadingHUD.m in Sources */,
 				0A837A471FA71179003B6E08 /* DebugModule.m in Sources */,
 				0A837A4F1FA7131B003B6E08 /* DBTools.m in Sources */,
+				0A837A751FA856B0003B6E08 /* ProgressHUD.m in Sources */,
 				0A8379FF1FA6CEBE003B6E08 /* ViewController.m in Sources */,
 				0A837A571FA71AA5003B6E08 /* WEXNetworkConfig.m in Sources */,
 				0A837A501FA7131B003B6E08 /* FileUtil.m in Sources */,
+				0A837A6E1FA8527D003B6E08 /* ToastView.m in Sources */,
+				0A837A641FA84F3A003B6E08 /* WEXBaseViewController.m in Sources */,
+				0A837A771FA856B0003B6E08 /* ProgressView.m in Sources */,
 				0A837A3D1FA708D7003B6E08 /* WEXBaseNetworkApi.m in Sources */,
 				0A837A0A1FA6CEBE003B6E08 /* main.m in Sources */,
 				0A837A511FA7131B003B6E08 /* SizeUtil.m in Sources */,
@@ -470,9 +531,12 @@
 				0A837A5A1FA71B24003B6E08 /* WEXUrlConfig.m in Sources */,
 				0A837A541FA713CA003B6E08 /* CrashLoginMemory.m in Sources */,
 				0A837A361FA707F1003B6E08 /* NSString+Ext.m in Sources */,
+				0A837A7A1FA858F2003B6E08 /* WEXAlert.m in Sources */,
 				0A837A381FA707F1003B6E08 /* UIFont+Ext.m in Sources */,
+				0A837A6A1FA85079003B6E08 /* UIViewController+Ext.m in Sources */,
 				0A837A351FA707F1003B6E08 /* NSDate+Ext.m in Sources */,
 				0A8379FC1FA6CEBE003B6E08 /* AppDelegate.m in Sources */,
+				0A837A611FA84EE9003B6E08 /* WEXBaseTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

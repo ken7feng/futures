@@ -8,6 +8,7 @@
 
 #import "WEXBaseNetworkApi.h"
 #import "AFNetworking.h"
+#import "WEXNetworkConfig.h"
 
 @implementation WEXBaseNetworkApi
 
@@ -93,6 +94,9 @@
 {
     NSDate * date = [NSDate getCurrentDate];
     NSString* timeStamp = [NSString stringWithFormat:@"%d", (int)([date timeIntervalSince1970]/1)];
+    
+    //用户token
+    NSString *token = @"";//[UserDefaultData sessionKey];
     if (token.length <= 0&& [NSString emptyOrNull:token]) {
         token = @"";
     }
@@ -106,7 +110,7 @@
     [manager.requestSerializer setTimeoutInterval:_networkTimeout];
     
     //    NSString* doUrl = [NSString stringWithFormat:@"%@%@%@",[[NetworkConfig defaultManager] getCurrentServer],AppVersion,url];
-    NSString* doUrl = [NSString stringWithFormat:@"%@%@",[[NetworkConfig defaultManager] getCurrentServer],url];
+    NSString* doUrl = [NSString stringWithFormat:@"%@%@",[[WEXNetworkConfig defaultManager] getCurrentServer],url];
     NSTimeInterval requestTime = [[NSDate date] timeIntervalSince1970];
     NSLog(@"--------------===============%@===============--------------",manager.requestSerializer.HTTPRequestHeaders);
     
@@ -161,10 +165,12 @@
                  else
                  {
                      
-                     ErrorModel * errorDataModel = [[ErrorModel alloc]init];
-                     errorDataModel.errmsg = errmsg;
-                     errorDataModel.code = status;
-                     NSError *error = [[NSError alloc]initWithDomain:@"error" code:ResponseNetworkError userInfo:@{kError : errorDataModel}];
+                     //自定义的报错模式
+//                     ErrorModel * errorDataModel = [[ErrorModel alloc]init];
+//                     errorDataModel.errmsg = errmsg;
+//                     errorDataModel.code = status;
+//                     NSError *error = [[NSError alloc]initWithDomain:@"error" code:ResponseNetworkError userInfo:@{kError : errorDataModel}];
+                     NSError * error = [[NSError alloc]initWithDomain:@"error" code:ResponseNetworkError userInfo:nil];
                      faild(error);
                      
                  }

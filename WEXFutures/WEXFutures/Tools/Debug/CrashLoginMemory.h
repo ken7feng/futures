@@ -11,7 +11,7 @@
 //设置线上crashLog
 void _setOnlieCrashLog(const char* fun, int line, NSString *format);
 //获取线上crashlog
-NSString* _getOnlineCrashJsonLog();
+NSString* _getOnlineCrashJsonLog(void);
 //分析log
 NSString* _analysisCrashLog(NSString* log);
 

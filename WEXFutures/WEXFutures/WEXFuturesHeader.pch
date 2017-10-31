@@ -15,6 +15,7 @@
 //自定义
 #import "SystemMacros.h"
 #import "DimensDefine.h"
+#import "ColorDefine.h"
 
 //工具
 #import "NSString+Ext.h"
